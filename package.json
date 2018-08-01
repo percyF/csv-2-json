@@ -1,0 +1,15 @@
+{
+  "name": "csv-2-json",
+  "version": "1.0.0",
+  "description": "Reads a file as CSV and saves it as JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Percy E Ferry",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.7"
+  }
+}
