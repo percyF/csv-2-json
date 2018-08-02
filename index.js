@@ -1,13 +1,15 @@
 // import filesystem library
 const fs = require('fs');
+// import path resolution library
+const path = require('path');
 // import csvtojson library
 const toJson = require('csvtojson');
 
 // create path to input file
-const inputPath='./data/customer-data.csv';
+const inputPath = path.join(__dirname, '/data/customer-data.csv');
 
 // create path to output file
-const outputPath='./data/JSON.json';
+const outputPath = path.join(__dirname, '/data/JSON.json');
 
 // use csvtojson to process the input file
 toJson().fromFile(inputPath).on('error', (err)=>{
